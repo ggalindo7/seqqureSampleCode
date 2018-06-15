@@ -12,7 +12,7 @@ import {
   ControlLabel,
   FormControl
 } from "react-bootstrap";
-import MilestoneDocs from "./MilestoneDocs.js";
+import MilestoneDocs from "./MilestoneDocs";
 
 class EscrowMilestones extends React.Component {
   constructor(props) {
@@ -391,19 +391,21 @@ class EscrowMilestones extends React.Component {
             <input type="submit" value="Submit" />
           </form>
           <form className="smart-form">
-            <label className="checkbox">
-              <input
-                type="checkbox"
-                name="isCompleted"
-                id="isCompleted"
-                value={true}
-                checked={this.state.isCompleted}
-                onChange={this.onChange}
-                onClick={this.handleToggle}
-              />
-              <i />
-              Hide Completed
-            </label>
+            <div className="col-2">
+              <label className="checkbox">
+                <input
+                  type="checkbox"
+                  name="isCompleted"
+                  id="isCompleted"
+                  value={true}
+                  checked={this.state.isCompleted}
+                  onChange={this.onChange}
+                  onClick={this.handleToggle}
+                />
+                <i />
+                Hide Completed
+              </label>
+            </div>
           </form>
           <div className="row flexBox">
             <table

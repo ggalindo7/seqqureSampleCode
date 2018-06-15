@@ -299,14 +299,14 @@ class MilestoneForm extends React.Component {
               <button
                 type="button"
                 onClick={this.onSave}
-                className="btn btn-primary btn-sm"
+                className="btn btn-primary btn-xs"
               >
                 Save
               </button>
               <button
                 type="button"
                 onClick={this.onCancel}
-                className="btn btn-warning btn-sm"
+                className="btn btn-warning btn-xs"
               >
                 Cancel
               </button>

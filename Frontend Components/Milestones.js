@@ -111,7 +111,7 @@ class Milestones extends Component {
                   <i className="fa fa-fw fa-road" /> Milestone Types
                   <button
                     type="button"
-                    className="btn btn-primary btn-xs pull-right"
+                    className="btn btn-warning btn-xs pull-right"
                     onClick={this.onAdd}
                   >
                     Add New
